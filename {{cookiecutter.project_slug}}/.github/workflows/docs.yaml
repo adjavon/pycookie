@@ -27,6 +27,7 @@ jobs:
 
   # Deploy the artifact to GitHub pages.
   # NOTE: You must enable GitHub pages in Settings with the Source as Github Actions
+#{% raw %}
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -39,3 +40,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+#{% endraw %}
